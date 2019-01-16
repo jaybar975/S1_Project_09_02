@@ -28,13 +28,19 @@
 <body>
     <header>
         <img src="sb_logo.png" alt="The Spice Bowl" />
-        <form id="login" action="http://www.example.com/sb/login" method="POST"></form>
-        <input id="userBox" placeholder="username" />
-        <input id="pwdBox" placeholder="password" />
+        <!-- This creates the form element with a id called "login" an action from a website called "http://www.example.com/sb/login" and a method of "POST" -->
+        <form id="login" action="http://www.example.com/sb/login" method="POST">
+            <!-- This creates the div element with a class of "formRow" -->
+            <div class="formRow">
+                <!-- This creates the input element with a id of "userBox" and a placeholder called "username" -->
+                <input id="userBox" placeholder="username" />
+                <!-- This creates the input element with a id called "pwdBox" and a placeholder called "password" -->
+                <input id="pwdBox" placeholder="password" />
+            </div>
+        </form>
 
-
-
-        <nav> <a id="navicon" href="#"><img src="sb_navicon.png" alt="" /></a>
+        <nav>
+            <a id="navicon" href="#"><img src="sb_navicon.png" alt="" /></a>
             <ul>
                 <li><a href="#">Spices</a></li>
                 <li><a href="#">Recipes</a></li>
@@ -48,37 +54,243 @@
     <section>
 
         <h1>Payment Form</h1>
+        <!-- This creates the form element with a id called "payment" an action from a website called "http://www.example.com/sb/payment" and a method called "POST" -->
         <form id="payment" action="http://www.example.com/sb/payment" method="POST">
+            <!-- This creates the fieldset element with a id called "billing" -->
             <fieldset id="billing" />
+            <!-- This creates the legend element that says "Billing Information (required)" -->
             <legend>Billing Information (required)</legend>
-
+            <!-- This creates the lable element with a for called "firstBox" and the text says "First Name" -->
             <label for="firstBox">First Name</label>
+            <!-- This creates the input element with a type called "text" a name called "fName" id called "firstBox" and this type of information is "required" to fill out -->
             <input type="text" name="fName" id="firstBox" required />
-
+            <!-- This creates the label element with a for called "lastBox" and the text is called "Last Name" -->
             <label for="lastBox">Last Name</label>
+            <!-- This creates the input element with a type of "text" a name called "lName" an id of "lastBox" and this part of the information is "required" to fill out -->
             <input type="text" name="lName" id="lastBox" required />
-
+            <!-- This creates the label element with a for called "streetBox" and the text says "Street Address" -->
             <label for="streetBox">Street Address</label>
+            <!-- This creates the input element with a type of "text" a name called "street" a id called "streeBox" and this part of information is "reqired" to fill out -->
             <input type="text" name="street" id="streetBox" required />
-
+            <!-- This creates the label element with a for called "streetBox2" and the text says "Street Address (2)" -->
             <label for="streetBox2">Street Address (2)</label>
+            <!-- This creates the inpout element with a type of "text" a name called "street2" and a id called "streetBox2 and this one is not "required" to fill out -->
             <input type="text" name="street2" id="streetBox2" />
-
+            <!-- This creates the label element with a for called "cityBox" and the text says "City" -->
             <label for="cityBox">City</label>
+            <!-- This creates the input element with a type of "text" a name called "city" a id called "cityBox" and this part of information is "required" to fill out -->
             <input type="text" name="city" id="cityBox" required />
-
+            <!-- This creates the label element with a for called "stateBox" and the text says "State" -->
             <label for="stateBox">State</label>
+            <!-- This creates the input element with a type of "text" a name called "state" a id called "stateBox" and this part of information is "required" to fill out -->
             <input type="text" name="state" id="stateBox" required />
-
+            <!-- This creates the label element with a for called "zipBox" and the text says "ZIP/Postal Code" -->
             <label for="zipBox">ZIP/Postal Code</label>
+            <!-- This creates the input element with a type of "text" a name called "zip" a id called "zipBox" and a pattern called "^\d{5}(-\d{4})?$" -->
             <input type="text" name="zip" id="zipBox" pattern="^\d{5}(-\d{4})?$" />
-
+            <!-- This creates the label element with a for called "countryBox" and the text is called "Country" -->
             <label for="countryBox">Country</label>
-            <input type="text" name="country" id="countryBox" required />
-
+            <!-- This creates the input element with a type of "text" a name called "country" a id called "countryBox" its "required" to fill out this part of information and the value is set to "United States" -->
+            <input type="text" name="country" id="countryBox" required value="United States" />
+            <!-- This creates the label element with a for called "phoneBox" and the text says "Phone" -->
             <label for="phoneBox">Phone</label>
+            <!-- This creates the input element with a type of "text" a name called "phone" a id called "phoneBox" a pattern that says "^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" and it is "required" to fill out this part of information -->
             <input type="tel" name="phone" id="phoneBox" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            <!-- This creates the datalist element with a id called "stateList" -->
+            <datalist id="stateList" />
+            <!-- This creates the select element with a name called "stateBox" a id called "stateList" and its "required to fill out ths part of information" -->
+            <select name="stateBox" id="stateList" required />
+            <!-- This creates the option element with a value of "AL" and the text says "AL" -->
+            <option value="AL">AL</option>
+            <!-- This creates the option element with a value of "AK" and the text says "AK" -->
+            <option value="AK">AK</option>
+            <!-- This creates the option element with a value of "AR" and the text says "AR" -->
+            <option value="AR">AR</option>
+            <!-- This creates the option element with a value of "AZ" and the text says "AZ" -->
+            <option value="AZ">AZ</option>
+            <!-- This creates the option element with a value of "CA" and the text says "CA" -->
+            <option value="CA">CA</option>
+            <!-- This creates the option element with a value of "CO" and the text says "CO" -->
+            <option value="CO">CO</option>
+            <!-- This creates the option element with a value of "CT" and the text says "CT" -->
+            <option value="CT">CT</option>
+            <!-- This creates the option element with a value of "DC" and the text says "DC" -->
+            <option value="DC">DC</option>
+            <!-- This creates the option element with a value of "DE" and the text says "DE" -->
+            <option value="DE">DE</option>
+            <!-- This creates the option element with a value of "FL" and the text says "Fl" -->
+            <option value="FL">FL</option>
+            <!-- This creates the option element with a value of "GA" and the text says "GA" -->
+            <option value="GA">GA</option>
+            <!-- This creates the option element with a value of "HI" and the text says "HI" -->
+            <option value="HI">HI</option>
+            <!-- This creates the option element with a value of "IA" and the text says "IA" -->
+            <option value="IA">IA</option>
+            <!-- This creates the option element with a value of "ID" and the text says "ID" -->
+            <option value="ID">ID</option>
+            <!-- This creates the option element with a value of "IL" and the text says "IL" -->
+            <option value="IL">IL</option>
+            <!-- This creates the option element with a value of "IN" and the text says "IN" -->
+            <option value="IN">IN</option>
+            <!-- This creates the option element with a value of "KS" and the text says "KS" -->
+            <option value="KS">KS</option>
+            <!-- This creates the option element with a value of "KY" and the text says "KY" -->
+            <option value="KY">KY</option>
+            <!-- This creates the option element with a value of "LA" and the text says "LA" -->
+            <option value="LA">LA</option>
+            <!-- This creates the option element with a value of "MA" and the text says "MA" -->
+            <option value="MA">MA</option>
+            <!-- This creates the option element with a value of "MD" and the text says "MD" -->
+            <option value="MD">MD</option>
+            <!-- This creates the option element with a value of "ME" and the text says "ME" -->
+            <option value="ME">ME</option>
+            <!-- This creates the option element with a value of "MI" and the text says "MI" -->
+            <option value="MI">MI</option>
+            <!-- This creates the option element with a value of "MN" and the text says "MN" -->
+            <option value="MN">MN</option>
+            <!-- This creates the option element with a value of "MO" and the text says "MO" -->
+            <option value="MO">MO</option>
+            <!-- This creates the option element with a value of "MS" and the text says "MS" -->
+            <option value="MS">MS</option>
+            <!-- This creates the option element with a value of "MT" and the text says "MT" -->
+            <option value="MT">MT</option>
+            <!-- This creates the option element with a value of "NC" and the text says "NC" -->
+            <option value="NC">NC</option>
+            <!-- This creates the option element with a value of "NE" and the text says "NE" -->
+            <option value="NE">NE</option>
+            <!-- This creates the option element with a value of "NH" and the text says "NH" -->
+            <option value="NH">NH</option>
+            <!-- This creates the option element with a value of "NJ" and the text says "NJ" -->
+            <option value="NJ">NJ</option>
+            <!-- This creates the option element with a value of "NM" and the text says "NM" -->
+            <option value="NM">NM</option>
+            <!-- This creates the option element with a value of "NV" and the text says "NV" -->
+            <option value="NV">NV</option>
+            <!-- This creates the option element with a value of "NY" and the text says "NY" -->
+            <option value="NY">NY</option>
+            <!-- This creates the option element with a value of "ND" and the text says "ND" -->
+            <option value="ND">ND</option>
+            <!-- This creates the option element with a value of "OH" and the text says "OH" -->
+            <option value="OH">OH</option>
+            <!-- This creates the option element with a value of "OK" and the text says "OK" -->
+            <option value="OK">OK</option>
+            <!-- This creates the option element with a value of "OR" and the text says "OR" -->
+            <option value="OR">OR</option>
+            <!-- This creates the option element with a value of "PA" and the text says "PA" -->
+            <option value="PA">PA</option>
+            <!-- This creates the option element with a value of "RI" and the text says "RI" -->
+            <option value="RI">RI</option>
+            <!-- This creates the option element with a value of "SC" and the text says "SC" -->
+            <option value="SC">SC</option>
+            <!-- This creates the option element with a value of "SD" and the text says "SD" -->
+            <option value="SD">SD</option>
+            <!-- This creates the option element with a value of "TN" and the text says "TN" -->
+            <option value="TN">TN</option>
+            <!-- This creates the option element with a value of "TX" and the text says "TX" -->
+            <option value="TX">TX</option>
+            <!-- This creates the option element with a value of "UT" and the text says "UT" -->
+            <option value="UT">UT</option>
+            <!-- This creates the option element with a value of "VT" and the text says "VT" -->
+            <option value="VT">VT</option>
+            <!-- This creates the option element with a value of "VA" and the text says "VA" -->
+            <option value="VA">VA</option>
+            <!-- This creates the option element with a value of "WA" and the text says "WA" -->
+            <option value="WA">WA</option>
+            <!-- This creates the option element with a value of "WI" and the text says "WI" -->
+            <option value="WI">WI</option>
+            <!-- This creates the option element with a value of "WV" and the text says "WV" -->
+            <option value="WV">WV</option>
+            <!-- This creates the option element with a value of "WY" and the text says "WY" -->
+            <option value="WY">WY</option>
+            </select>
+            </fieldset>
+            <!-- This creates the fieldset element with a id called "creditCard" -->
+            <fieldset id="creditCard" />
+            <legend>Credit Card (required)</legend>
+            <!-- This creaets the fieldset element with a id called "cardLabel" -->
+            <fieldset id="cardLabel" />
+            <!-- This creates the label element with a class called "cardLabel" -->
+            <label class="cardLabel">
+                <!-- This creates the input element wiht a name called "cardLabel" a value of "amex" a type of "radio" -->
+                <input name="cardLabel" value="amex" type="radio" />
+                <!-- This creates the image element with a src from a photo called "sb_amex.png" -->
+                <img src="sb_amex.png" />
+            </label>
+            <!-- This creates the label element with a class called "cardLabel" -->
+            <label class="cardLabel">
+                <!-- This creates the input element with a name called "cardLabel" a value of "discover" a type of "radio" -->
+                <input name="cardLabel" value="discover" type="radio" />
+                <!-- This creates the image element with a src from a photo called "sb_discover.png" -->
+                <img src="sb_discover.png" />
+            </label>
+            <!-- This creates the label element with a class called "cardLabel" -->
+            <label class="cardLabel">
+                <!-- This creaets the input element with a name called "cardLabel" a value of "master" and a type of "radio" -->
+                <input name="cardLabel" value="master" type="radio" />
+                <!-- This creates the image element with a src from a photo called "sb_master.png" -->
+                <img src="sb_master.png" />
+            </label>
+            <!-- This creates the label element with a class called "cardLabel" -->
+            <label class="cardLabel">
+                <!-- This creates the input element with a name called "cardLabel" a value of "visa"  and a type of "radio" -->
+                <input name="cardLabel" value="visa" type="radio" />
+                <!-- This creates the image element with a src from a photo called "sb_visa.png" -->
+                <img src="sb_visa.png" />
+            </label>
+            </fieldset>
+            <!-- This creates the label with a text called "Credit Card Number" -->
+            <label>Credit Card Number</label>
+            <!-- This creates the input element with a name called "cardNumber" a id called "cardBox" a typr of "text" a pattern that says "^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" and it is "required" to put information -->
+            <input name="cardNumber" id="cardBox" type="text" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
+            <!-- This creates the label element with a for called "cardMonth" and the text says "Expiration Date" -->
+            <label for="cardMonth">Expiration Date</label>
+            <!-- This creates the select element with a name called "cardMonth" a id called "monthList and it is "required to put your information -->
+            <select name="cardMonth" id="monthList" required>
+                <!-- This creates the option element with a value of nothing a the text says "Month" -->
+                <option value=" ">Month</option>
+                <!-- This creates the option element with a value of "1" and the text says "January (01)" -->
+                <option value="1">January (01)</option>
+                <!-- This creates the option element with a value of "2" and the text says "February (02) -->
+                <option value="2">February (02)</option>
+                <!-- This creates the option element with a value of "3" and the text says "March (03) -->
+                <option value="3">March (03)</option>
+                <!-- This creates the option element with a value of "4" and the text says "April (04) -->
+                <option value="4">April (04)</option>
+                <!-- This creates the option element with a value of "5" and the text says "May (05) -->
+                <option value="5">May (05)</option>
+                <!-- This creates the option element with a value of "6" and the text says "June (06) -->
+                <option value="6">June (06)</option>
+                <!-- This creates the option element with a value of "7" and the text says "July (017) -->
+                <option value="7">July (07)</option>
+                <!-- This creates the option element with a value of "8" and the text says "August (08) -->
+                <option value="8">August (08)</option>
+                <!-- This creates the option element with a value of "9" and the text says "September (09) -->
+                <option value="9">September (09)</option>
+                <!-- This creates the option element with a value of "10" and the text says "October (10) -->
+                <option value="10">October (10)</option>
+                <!-- This creates the option element with a value of "11" and the text says "November (11) -->
+                <option value="11">November (11)</option>
+                <!-- This creates the option element with a value of "12" and the text says "December (12) -->
+                <option value="12">December (12)</option>
+            </select>
+            <!-- This creates the select element with a name called "cardYear" a id called "yearList" and its required to fill this information out -->
+            <select name="cardYear" id="yearList" required>
+                <option value=" ">Year</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+            </select>
 
+            <label for="csc">CSC</label>
+            <input name="csc" id="cscBox" type="text" maxlength="3" required pattern="\d{3}$" placeholder="nnn" />
+            </fieldset>
+
+
+            <button type="submit">
+                <img src="sb_button.png" alt="next" />
+            </button>
             </fieldset>
         </form>
 
