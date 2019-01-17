@@ -13,14 +13,17 @@
 
 
 /* Validation Styles */
+/* This sets the input element with a pseudo class of "not" and "focus" a type of "radio with a background of red blue green 255, 218, 165 */
 input:not([type='radio']):focus {
     background: rgb(255, 218, 165);
 }
 
+/* This creates the input element with a pseudo class of "not", "focus", and "valid" with a type of "radio" with a background of red blue green of 215, 255, 215 and url from a photo called "sb_valid.png" to the right and a contain of no repeat */
 input:not([type='radio']):focus:valid {
     background: rgb(215, 255, 215) url(sb_valid.png) right/contain no-repeat;
 }
 
+/* This creates the input element with a pseudo class of "not", "focus", and "invalid" with a type of "radio" with a background of red blue green of 255, 245, 215 and url from a photo called "sb_invalid.png" to the right and a contain of no repeat */
 input:not([type='radio']):focus:invalid {
     background: rgb(255, 245, 215) url(sb_invalid.png) right/contain no-repeat;
 }
